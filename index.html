@@ -56,7 +56,9 @@
       .right_txt {
         margin-left: 30px;
       }
-
+      .displ {
+        display: block;
+      }
       .flex {
         width: 98%;
 
@@ -70,7 +72,9 @@
       .sm_hid {
         display: block;
       }
-
+      .hid {
+        display: none;
+      }
       .video_st {
         width: 700px;
         height: 500px;
@@ -80,6 +84,12 @@
       }
       @media screen and (max-width: 768px) {
         .sm_block {
+          display: block;
+        }
+        .displ {
+          display: none;
+        }
+        .hid {
           display: block;
         }
         .sm_hid {
@@ -116,7 +126,7 @@
       ></div>
     </header>
     <section
-      class="skrollable u-clearfix u-custom-color-7 u-parallax u-uploaded-video u-section-1"
+      class="skrollable u-clearfix u-custom-color-7 u-parallax u-uploaded-video u-section-1 displ"
       id="sec-b558"
       style="position: relative"
     >
@@ -222,6 +232,48 @@
         </div>
       </div>
       `
+    </section>
+
+    <!-- mobile version -->
+    <section style="padding: 100px 10px; background: white" class="hid">
+      <div style="margin: 0 auto">
+        <video autoplay muted loop id="myVideo" style="width: 400px">
+          <source src="/vid.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <h2
+        style="font-family: 'Schoolbell'; font-size: 30px; margin: 45px 0"
+        class="sm_block"
+      >
+        In my garage
+
+        <br />
+        Knowledge,Lamborghini,Books
+      </h2>
+
+      <div
+        class="social_icon"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <img
+          src="images/6567d1838749230e515e46db_Untitled_Artwork-1-p-500.png"
+          style="width: 65px"
+          alt=""
+        />
+
+        <img
+          src="images/6567d1826079cf87f9b2f82f_Untitled_Artwork-2-p-500.png"
+          style="width: 65px"
+          alt=""
+        />
+
+        <img
+          src="images/6567d182bee1eeebb1b82dd2_Untitled_Artwork-4-p-500.png"
+          style="width: 65px"
+          alt=""
+        />
+      </div>
     </section>
   </body>
 </html>
