@@ -56,6 +56,47 @@
       .right_txt {
         margin-left: 30px;
       }
+
+      .flex {
+        width: 98%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sm_block {
+        display: none;
+      }
+      .sm_hid {
+        display: block;
+      }
+
+      .video_st {
+        width: 700px;
+        height: 500px;
+        border-radius: 15px;
+        margin-left: 80px;
+        transform: translate(2%, 10px);
+      }
+      @media screen and (max-width: 768px) {
+        .sm_block {
+          display: block;
+        }
+        .sm_hid {
+          display: none;
+        }
+        .flex {
+          width: 98%;
+
+          display: block;
+        }
+        .video_st {
+          width: 900px;
+          height: 300px;
+          transform: translate(50%.0);
+          border-radius: 15px;
+        }
+      }
     </style>
   </head>
   <body
@@ -79,16 +120,7 @@
       id="sec-b558"
       style="position: relative"
     >
-      <div
-        class="u-sheet u-sheet-1"
-        style="
-          width: 98%;
-
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        "
-      >
+      <div class="u-sheet u-sheet-1 flex">
         <!-- <span class="u-align-center u-file-icon u-icon u-icon-1"
           >
           <img src="images/UkuranasliIDontGiveAFuck.png" alt=""
@@ -114,29 +146,28 @@
 
         <h2
           style="margin-right: 25px; font-family: 'Schoolbell'; font-size: 50px"
+          class="sm_hid"
         >
           In my garage
         </h2>
-        <video
-          autoplay
-          muted
-          loop
-          id="myVideo"
-          style="
-            width: 900px;
-            height: 500px;
-
-            border-radius: 15px;
-          "
-        >
+        <video autoplay muted loop id="myVideo" class="video_st">
           <source src="/vid.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
-        <h2
-          class="right_txt"
-          style="margin-right: 25px; font-family: 'Schoolbell';font-size:50px'"
-        >
+        <h2 style="font-family: 'Schoolbell'; font-size: 30px" class="sm_block">
+          In my garage
+
+          <br />
           Knowledge,Lamborghini,Books
+        </h2>
+        <h2
+          class="right_txt sm_hid"
+          style="margin-right: 25px; font-family: 'Schoolbell'; font-size: 50px"
+        >
+          Knowledge,
+          <br />
+          Lamborghini, Books
+          <br />
         </h2>
       </div>
       <div>
